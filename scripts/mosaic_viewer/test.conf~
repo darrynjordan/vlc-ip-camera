@@ -1,0 +1,30 @@
+new channel1 broadcast enabled                                                       
+setup channel1 input file:///home/darryn/fake1.png
+setup channel1 output #mosaic-bridge{id=1,height=360,width=640}
+
+new channel2 broadcast enabled                                                       
+setup channel2 input file:///home/darryn/fake2.png
+setup channel2 output #mosaic-bridge{id=2,height=360,width=640}
+
+new channel3 broadcast enabled                                                       
+setup channel3 input file:///home/darryn/fake3.png
+setup channel3 output #mosaic-bridge{id=3,height=360,width=640}
+
+new channel4 broadcast enabled                                                       
+setup channel4 input file:///home/darryn/fake4.png
+setup channel4 output #mosaic-bridge{id=4,height=360,width=640}
+
+new mosaic broadcast enabled
+setup mosaic input file:///home/darryn/fake.png
+setup mosaic option image-duration=-1
+setup mosaic option image-fps=10/1
+setup mosaic option mosaic-rows=2
+setup mosaic option mosaic-cols=2
+setup mosaic option mosaic-position=1
+setup mosaic output #transcode{sfilter=mosaic,scale=1}:display
+
+control channel1 play
+control channel2 play
+control channel3 play
+control channel4 play
+control mosaic play

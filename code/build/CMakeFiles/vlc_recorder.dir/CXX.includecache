@@ -1,0 +1,36 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/darryn/Dropbox/Workspace/VLC/vlc_recorder/main.cpp
+source/includes.hpp
+/home/darryn/Dropbox/Workspace/VLC/vlc_recorder/source/includes.hpp
+source/parameters.hpp
+/home/darryn/Dropbox/Workspace/VLC/vlc_recorder/source/parameters.hpp
+source/connection_manager.hpp
+/home/darryn/Dropbox/Workspace/VLC/vlc_recorder/source/connection_manager.hpp
+
+/home/darryn/Dropbox/Workspace/VLC/vlc_recorder/source/connection_manager.hpp
+includes.hpp
+/home/darryn/Dropbox/Workspace/VLC/vlc_recorder/source/includes.hpp
+parameters.hpp
+/home/darryn/Dropbox/Workspace/VLC/vlc_recorder/source/parameters.hpp
+
+/home/darryn/Dropbox/Workspace/VLC/vlc_recorder/source/includes.hpp
+boost/asio.hpp
+-
+iostream
+-
+string
+-
+stdio.h
+-
+ctime
+-
+
+/home/darryn/Dropbox/Workspace/VLC/vlc_recorder/source/parameters.hpp
+

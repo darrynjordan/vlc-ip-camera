@@ -1,0 +1,1 @@
+/home/darryn/Dropbox/Workspace/VLC/vlc_recorder/build/CMakeFiles/vlc_recorder.dir

@@ -1,0 +1,5 @@
+Ubuntu:
+
+use "sudo apt-get install build-essential" to get g++ compiler
+use "sudo apt-get install libboost-all-dev" to get Boost Library
+Clean project and re-build

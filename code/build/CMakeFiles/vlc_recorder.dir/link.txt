@@ -1,0 +1,1 @@
+/usr/bin/c++       CMakeFiles/vlc_recorder.dir/main.cpp.o CMakeFiles/vlc_recorder.dir/source/connection_manager.cpp.o  -o vlc_recorder -rdynamic -lboost_regex -lboost_system -lboost_serialization -lboost_thread -lboost_filesystem 

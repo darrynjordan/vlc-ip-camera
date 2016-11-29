@@ -1,0 +1,22 @@
+# depslib dependency file v1.0
+1403747058 source:/home/dazzard/Documents/Vacation Work/Boost Testing/v2.0/main.cpp
+	<boost/asio.hpp>
+	<iostream>
+	<string>
+	<stdio.h>
+	<ctime>
+
+1405433766 source:/home/dazzard/Documents/Vacation Work/VLC/Software Development/v2.0 - Audio Files/main.cpp
+	<boost/asio.hpp>
+	<iostream>
+	<string>
+	<stdio.h>
+	<ctime>
+
+1405433766 source:/home/darryn/Dropbox/University/Vacation Work/RRSG/VLC/Software Development/v2.0 - Audio Files/main.cpp
+	<boost/asio.hpp>
+	<iostream>
+	<string>
+	<stdio.h>
+	<ctime>
+

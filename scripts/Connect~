@@ -1,0 +1,25 @@
+#!/usr/bin/expect
+
+#Connect to VLC Telnet Server
+
+spawn telnet 192.168.1.118 4212
+
+expect "Password: "
+send "vlc\r"
+
+expect "> "
+send "new mic broadcast enabled\r"
+
+expect "> "
+send "setup mic input alsa://hw:0,0\r"
+
+expect "> "
+send "setup mic output #standard{access=file,mux=ogg,dst=mic}\r"
+
+expect "> "
+send "control mic play\r"
+
+interact 
+
+
+

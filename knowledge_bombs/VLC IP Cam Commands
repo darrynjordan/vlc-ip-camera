@@ -1,0 +1,21 @@
+Streaming with logo overlay:
+
+vlc --sub-filter "logo{file=/home/craig/Dropbox/UCT/NeXtRad/CameraOverlay/CameraOverlayNode1.png}" rtsp://192.168.0.46:554/live/video/profile1
+
+
+
+Recording to disk at 720p (seems to be working):
+
+cvlc --logo-file  /home/craig/Dropbox/UCT/NeXtRad/IPCam/CameraOverlay/CameraOverlayNode1_720p.png rtsp://192.168.0.46:554/live/video/profile2 --sout 
+
+"#transcode{vcodec=h264,acodec=none,sfilter=logo}:std{access=file,mux=mp4,dst='/home/craig/Desktop/file.mp4'}"
+
+     
+FINALLY...
+
+#transcode{sfilter=logo{file='CameraOverlayNode1_720p.png'}, vcodec=h264,acodec=none}:std{access=file,mux=mp4,dst=" + dateTime + ".mp4} \n"
+
+
+
+
+#transcode{sfilter=logo{file='CameraOverlayNode1_720p.png',position=0},vcodec=h264,acodec=none}:std{access=file,mux=mp4,dst=" + dateTime + ".mp4}\n"

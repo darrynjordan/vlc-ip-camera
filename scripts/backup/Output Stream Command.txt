@@ -1,0 +1,52 @@
+dazzard@Nebucharnezzar:~$ telnet 0.0.0.0 4212
+Trying 0.0.0.0...
+Connected to 0.0.0.0.
+Escape character is '^]'.
+VLC media player 2.1.4 Rincewind
+Password: 
+Welcome, Master
+> new Test vod
+new
+> setup Test output #transcode{vcodec=h264,acodec=mpga,ab=128,channels=2,samplerate=44100}:file{mux=mp4,dst=/home/dazzard/Test,no-overwrite}
+setup
+> setup Test input Ready.mp3
+setup
+> setup Test enabled
+setup
+
+//----------------------------------------------
+
+> new Test vod
+new
+> setup Test input alsa://hw:0,0
+setup
+> setup Test input live-caching=100
+setup
+> setup Test output #display
+setup
+> setup Test enabled
+
+//----------------------------------------------
+
+dazzard@Nebucharnezzar:~$ telnet 192.168.1.118 4212
+Trying 192.168.1.118...
+Connected to 192.168.1.118.
+Escape character is '^]'.
+VLC media player 2.1.4 Rincewind
+Password: 
+Welcome, Master
+> new mic broadcast enabled
+new
+> setup mic input alsa://hw:0,0
+setup
+> setup mic output #standard{access=file,mux=ogg,dst=mic}
+setup
+> control mic play
+control
+> control mic stop
+control
+> 
+
+
+
+

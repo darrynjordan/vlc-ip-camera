@@ -1,0 +1,2 @@
+cvlc --vlm-conf mosaic.conf --mosaic-width=360 --mosaic-height=288 --mosaic-keep-picture --mosaic-rows=2 --mosaic-cols=2 --mosaic-position=1 --mosaic-order=1,2,3,4
+

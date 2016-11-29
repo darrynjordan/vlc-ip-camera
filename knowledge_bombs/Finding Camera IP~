@@ -1,0 +1,34 @@
+supply power, connect camera directly to laptop.
+set laptop ip address to 192.168.1.1
+install wire shark - use software centre, then:
+$ sudo chgrp myusername /usr/bin/dumpcap
+$ sudo chmod 750 /usr/bin/dumpcap
+$ sudo setcap cap_net_raw,cap_net_admin+eip /usr/bin/dumpcap
+
+EASIER METHOD:
+connect ipcam to pc
+run arp -a
+
+monitor the comms with IP Cam over the ethernet connection
+I found IP Address to be: 192.168.1.10:1900
+use web browser: http://192.168.1.10:1900 
+default username (admin) and password (admin)
+need vlc plugin
+$ sudo apt-get install vlc browser-plugin-vlc
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 

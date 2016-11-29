@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1403620343 source:/home/dazzard/Documents/Vacation Work/New Boost Test/main.cpp
+	<iostream>
+	<boost/asio.hpp>
+

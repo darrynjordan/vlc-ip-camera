@@ -1,0 +1,5 @@
+#!/bin/bash
+
+echo "Opening camera stream..."
+
+vlc rtsp://10.42.0.65:554/live/video/profile1

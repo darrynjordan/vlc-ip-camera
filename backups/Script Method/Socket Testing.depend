@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1403705385 source:/home/dazzard/Documents/Vacation Work/Boost Testing/New Test/main.cpp
+	<stdio.h>
+	<stdlib.h>
+	<iostream>
+
